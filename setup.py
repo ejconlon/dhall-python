@@ -45,6 +45,11 @@ requirements = [
     'attrs',
 ]
 
+
+with open('requirements3.txt') as f:
+    test_requirements = f.readlines()
+
+
 setup(
     name='dhall-python',
     version='0.0.0',
@@ -61,9 +66,7 @@ setup(
         'click',  # parglare dependency
     ],
     install_requires=requirements,
-    tests_require=[
-        'parameterized',
-    ] + requirements,
+    tests_require=test_requirements + requirements,
     dependency_links=[
         'https://github.com/igordejanovic/parglare/archive/c0345d4f4bc10e015d39884ce21c01712f3a892b.zip#egg=parglare',
     ],

@@ -5,8 +5,18 @@ Dhall for python
 [![codecov](https://codecov.io/gh/SupraSummus/dhall-python/branch/master/graph/badge.svg)](https://codecov.io/gh/SupraSummus/dhall-python)
 
 Pure python implementation of [dhall](https://github.com/dhall-lang/dhall-lang) language.
+Supports Python 3 only.
 
-**Work in progres**
+**Work in progress**
+
+    # On first checkout you will need to initialize the dhall-lang submodule
+    git submodule init
+    git submodule update
+
+    # You can install dependencies in a virtualenv
+    python -m venv venv
+    venv/bin/pip install -e . -r requirements3.txt
+    source venv/bin/activate
 
     python setup.py build  # to patch the grammar and compile parser tables
     python setup.py test  # to run tests

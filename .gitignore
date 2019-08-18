@@ -4,3 +4,5 @@ dhall/_grammar.py
 .eggs/
 build/
 dhall_python.egg-info/
+/.vscode
+/venv
